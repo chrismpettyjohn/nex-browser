@@ -36,7 +36,7 @@ if (settings.get('enableBlurryClientFix')) {
 initFlash();
 initMenu();
 
-const CLIENT_URL = 'https://nexhotel.net/play/app';
+const CLIENT_URL = 'https://nexhotel.net/login/app';
 
 const launchGame = (browserWindow) => {
   if (token === '') {
@@ -81,7 +81,7 @@ const createWindow = async () => {
 
     // Handle FindRetros voting redirect
     if (
-      url.startsWith('https://nexhotel.net/play/app') &&
+      url.startsWith('https://nexhotel.net/login/app') &&
       !url.startsWith(CLIENT_URL)
     ) {
       launchGame(mainWindow);
