@@ -1,8 +1,8 @@
 {
   "name": "nex-browser",
-  "productName": "Nex",
+  "productName": "Nex Hotel",
   "version": "1.2.0",
-  "description": "Runs the Nex client with Adobe Flash Player",
+  "description": "Runs the PeakRP client with Adobe Flash Player",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -14,8 +14,8 @@
   },
   "keywords": [],
   "author": {
-    "name": "Nex",
-    "email": "info@nexhotel.net"
+    "name": "PeakRP",
+    "email": "info@peakrp.com"
   },
   "license": "MIT",
   "config": {
@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
-    "macos-alias": "^0.2.11",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {

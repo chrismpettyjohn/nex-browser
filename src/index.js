@@ -81,7 +81,7 @@ const createWindow = async () => {
 
     // Handle FindRetros voting redirect
     if (
-      url.startsWith('https://nexhotel.net/play') &&
+      url.startsWith('https://nexhotel.net/play/app') &&
       !url.startsWith(CLIENT_URL)
     ) {
       launchGame(mainWindow);
@@ -107,24 +107,6 @@ const createWindow = async () => {
   } else {
     loadLocalPage(mainWindow, 'landing-page');
   }
-
-  // const versionResponse = await fetch(
-  //   'https://nexhotel.net/api/peakBrowserVersionCheck',
-  // );
-  // const version = await versionResponse.json();
-  //
-  // if (app.getVersion() !== version) {
-  //   const { response: buttonIndexClicked } = await dialog.showMessageBox({
-  //     type: 'warning',
-  //     message: 'Your Nex browser version is out of date, please update',
-  //     buttons: ['Visit Nex Wiki Update Instructions'],
-  //     cancelId: -1,
-  //   });
-  //
-  //   if (buttonIndexClicked === 0) {
-  //     shell.openExternal('https://wiki.nexhotel.net/nex-browser');
-  //   }
-  // }
 };
 
 ipcMain.handle('reconnect', () => {
